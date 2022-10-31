@@ -1,0 +1,6 @@
+*.svg
+*.css
+*.mdx
+**/*.svg
+**/*.css
+node_modules

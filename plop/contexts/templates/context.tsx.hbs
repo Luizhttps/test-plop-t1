@@ -1,0 +1,20 @@
+import { createContext, useState } from "react";
+
+type {{pascalCase name}}ContextType = Record<string, any>;
+
+const {{pascalCase name}}Context = createContext({} as {{pascalCase name}}ContextType);
+
+function {{pascalCase name}}Provider({children}: any) {
+  const context: {{pascalCase name}}ContextType = {};
+
+  const [data, setData] = useState();
+
+  return (
+    <{{pascalCase name}}Context.Provider value={context}>
+      {children}
+    </{{pascalCase name}}Context.Provider>
+  );
+}
+
+export { {{pascalCase name}}Context, {{pascalCase name}}Provider };
+export type { {{pascalCase name}}ContextType };
